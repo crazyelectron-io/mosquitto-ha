@@ -30,7 +30,7 @@
               type: primary
           spec:
             containers:
-              - image: eclipse-mosquitto:2.0.12
+              - image: eclipse-mosquitto:{{mosquitto_version}}
                 name: mosquitto
                 ports:
                   - containerPort: 1883
@@ -147,7 +147,7 @@
               - /mosquitto/config/mosquitto.conf
               command:
               - mosquitto
-              image: eclipse-mosquitto:2.0.12
+              image: eclipse-mosquitto:{{mosquitto_version}}
               name: mosquitto
               ports:
               - containerPort: 1883
