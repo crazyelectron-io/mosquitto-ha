@@ -1,0 +1,5 @@
+# file:
+# synopsis:
+---
+mosquitto_namespace: automation
+mosquitto_lb_address: 10.100.0.31
